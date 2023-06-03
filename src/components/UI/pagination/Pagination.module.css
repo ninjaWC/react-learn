@@ -1,0 +1,22 @@
+.pages{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.pages__item{
+  color: #1855d8;
+  cursor: pointer;
+  border: 1px solid #2b19c9;
+  padding: 10px;
+}
+.pages__item:hover{
+  background-color: #2b19c979;
+  color: #fff;
+}
+
+.page__current{
+  border: 2px solid rgb(183, 0, 255);
+  font-weight: 700;
+}
