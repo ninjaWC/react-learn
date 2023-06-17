@@ -46,7 +46,15 @@
 
 .nav{
   width: 100vw;
+  height: 50px;
   background-color: #0b3783;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav button{
+  background-color: #fff;
+  margin-right: 50px;
 }
 .nav__items{
   display: flex;

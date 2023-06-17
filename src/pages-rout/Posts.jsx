@@ -58,12 +58,10 @@ function Posts() {
       </MyModal>
       <hr style={{margin:'15px 0px'}}/>
       <PostFilter filter={filter} setFilter={setFilter}/>
-      {loadingPost
-      ? <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:50}}><Loader/></div>
-      : 
-      <PostList remove={removePost} //тут передали функцию 
-            posts={sortedAndSearchedPosts} // тут передали посты 
-            title="Some title"/>
+      <PostList remove={removePost} posts={sortedAndSearchedPosts} title="Some title"/>
+      <div style={{height: "20px", backgroundColor:"green"}}/> {/*Ghgggggggggggg */}
+      {loadingPost && 
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:50}}><Loader/></div>
       }
       <Pagination
         page={page}
